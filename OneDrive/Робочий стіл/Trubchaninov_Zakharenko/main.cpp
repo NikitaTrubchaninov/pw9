@@ -5,7 +5,8 @@ int main () {
     std::cout << q << w;
     short qw = q + w;
 
-    std::cout << "sum == " << qw;
+    std::cout << "sum == " << qw << std::endl;
+    std::cout << "задача зроблена!";
 
     return 0;
 }
