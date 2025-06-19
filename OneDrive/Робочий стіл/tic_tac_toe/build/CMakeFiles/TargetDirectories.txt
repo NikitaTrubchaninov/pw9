@@ -1,0 +1,4 @@
+C:/Users/knigh/OneDrive/Робочий стіл/tic_tac_toe/build/CMakeFiles/libttc.dir
+C:/Users/knigh/OneDrive/Робочий стіл/tic_tac_toe/build/CMakeFiles/TicTacToe.dir
+C:/Users/knigh/OneDrive/Робочий стіл/tic_tac_toe/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/knigh/OneDrive/Робочий стіл/tic_tac_toe/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\knigh\OneDrive\Робочий стіл\tic_tac_toe\src\board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\knigh\OneDrive\Робочий стіл\tic_tac_toe\src\game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\knigh\OneDrive\Робочий стіл\tic_tac_toe\src\moves.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\knigh\OneDrive\Робочий стіл\tic_tac_toe\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{385CA6C9-172A-3768-B61E-23475B410F1D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

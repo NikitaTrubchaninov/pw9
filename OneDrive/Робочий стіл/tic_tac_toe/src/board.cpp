@@ -1,4 +1,4 @@
-#include "tictactoe/board.h"
+#include "board.hpp"
 #include <iostream>
 
 std::vector<char> h1(10, '-');

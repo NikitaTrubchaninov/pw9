@@ -1,27 +1,29 @@
-name: CI_TrubchaninovNikita_Group123
 on:
   push:
-    branches: [ "main", "master", "dev" ]  # Гілка dev створена додатково
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  BUILD_TYPE: Release
+  MY_VARIABLE: "Hello"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Clone repository
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
+    - run: echo ${{env.MY_VARIABLE}} 
 
     - name: Configure CMake
-      run: |
-        mkdir build
-        cd build
-        cmake .. -DBUILD_SHARED_LIBS=OFF
+      run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
 
-    - name: Build project
-      run: |
-        cd build
-        cmake --build . --config Release
+    - name: Build via CMake
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
-    - name: Run executable
-      run: |
-        cd build
-        ./tic_tac_toe
+    - name: List directories
+      run: ls -laR ${{github.workspace}}
+
+    - name: Test run
+      run: ${{github.workspace}}/build/MyAwesomeProgram

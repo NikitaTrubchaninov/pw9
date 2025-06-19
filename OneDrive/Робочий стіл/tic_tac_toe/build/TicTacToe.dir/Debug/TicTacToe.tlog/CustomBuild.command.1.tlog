@@ -1,0 +1,10 @@
+^C:\USERS\KNIGH\ONEDRIVE\РОБОЧИЙ СТІЛ\TIC_TAC_TOE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/knigh/OneDrive/Робочий стіл/tic_tac_toe" "-BC:/Users/knigh/OneDrive/Робочий стіл/tic_tac_toe/build" --check-stamp-file "C:/Users/knigh/OneDrive/Робочий стіл/tic_tac_toe/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

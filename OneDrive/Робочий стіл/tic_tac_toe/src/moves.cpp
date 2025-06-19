@@ -1,5 +1,7 @@
-#include "moves.h"
+#include "moves.hpp"
+#include "board.hpp"
 #include <iostream>
+
 
 int move1() {
     int move;

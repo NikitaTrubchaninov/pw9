@@ -1,4 +1,6 @@
-#include "tictactoe/game.h"
+#include "game.hpp"
+#include "board.hpp"
+#include <iostream>
 
 std::string name_player1, name_player2;
 

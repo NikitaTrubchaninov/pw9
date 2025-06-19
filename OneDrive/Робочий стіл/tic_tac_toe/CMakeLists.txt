@@ -9,6 +9,7 @@ else()
     set(LIB_TYPE STATIC)
 endif()
 
+# Створення бібліотеки
 add_library(libttc ${LIB_TYPE}
     src/board.cpp
     src/game.cpp
@@ -19,5 +20,6 @@ target_include_directories(libttc PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
+# Додавання виконуваного файлу
 add_executable(TicTacToe src/main.cpp)
 target_link_libraries(TicTacToe libttc)
